@@ -1,0 +1,47 @@
+# Nmap 7.60 scan initiated Sun Jul 29 09:56:06 2018 as: nmap -sT -sU -p0-1024 -oA ./result -vv -d -T5 172.16.0.1
+--------------- Timing report ---------------
+  hostgroups: min 1, max 100000
+  rtt-timeouts: init 250, min 50, max 300
+  max-scan-delay: TCP 5, UDP 1000, SCTP 5
+  parallelism: min 0, max 0
+  max-retries: 2, host-timeout: 900000
+  min-rate: 0, max-rate: 0
+---------------------------------------------
+Packet capture filter (device eth0): arp and arp[18:4] = 0x22000000 and arp[22:2] = 0x0001
+Packet capture filter (device eth0): dst host 172.16.0.125 and (icmp or icmp6 or ((tcp or udp or sctp) and (src host 172.16.0.1)))
+Increasing send delay for 172.16.0.1 from 0 to 50 due to 11 out of 19 dropped probes since last increase.
+Warning: 172.16.0.1 giving up on port because retransmission cap hit (2).
+Nmap scan report for 172.16.0.1
+Host is up, received arp-response (0.0096s latency).
+Scanned at 2018-07-29 09:56:06 EDT for 57s
+Not shown: 2026 closed ports
+Reason: 1022 conn-refused and 1004 port-unreaches
+PORT    STATE         SERVICE        REASON
+22/tcp  open          ssh            syn-ack
+53/tcp  open          domain         syn-ack
+443/tcp open          https          syn-ack
+40/udp  open|filtered unknown        no-response
+53/udp  open          domain         udp-response ttl 64
+57/udp  open|filtered priv-term      no-response
+67/udp  open|filtered dhcps          no-response
+72/udp  open|filtered netrjs-2       no-response
+98/udp  open|filtered tacnews        no-response
+111/udp open|filtered rpcbind        no-response
+122/udp open|filtered smakynet       no-response
+123/udp open|filtered ntp            no-response
+134/udp open|filtered ingres-net     no-response
+209/udp open|filtered tam            no-response
+219/udp open|filtered uarps          no-response
+428/udp open|filtered ocs_cmu        no-response
+455/udp open|filtered creativepartnr no-response
+500/udp open|filtered isakmp         no-response
+527/udp open|filtered stx            no-response
+641/udp open|filtered repcmd         no-response
+709/udp open|filtered entrustmanager no-response
+785/udp open|filtered unknown        no-response
+949/udp open|filtered unknown        no-response
+958/udp open|filtered unknown        no-response
+MAC Address: CC:2D:E0:17:52:5B (Unknown)
+
+Read from /usr/bin/../share/nmap: nmap-mac-prefixes nmap-payloads nmap-services.
+# Nmap done at Sun Jul 29 09:57:03 2018 -- 1 IP address (1 host up) scanned in 57.34 seconds

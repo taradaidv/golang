@@ -1,0 +1,5 @@
+# Nmap 7.60 scan initiated Sun Jul 29 09:56:06 2018 as: nmap -sT -sU -p0-1024 -oA ./result -vv -d -T5 172.16.0.1
+# Ports scanned: TCP(1025;0-1024) UDP(1025;0-1024) SCTP(0;) PROTOCOLS(0;)
+Host: 172.16.0.1 ()	Status: Up
+Host: 172.16.0.1 ()	Ports: 22/open/tcp//ssh///, 53/open/tcp//domain///, 443/open/tcp//https///, 40/open|filtered/udp/////, 53/open/udp//domain///, 57/open|filtered/udp//priv-term///, 67/open|filtered/udp//dhcps///, 72/open|filtered/udp//netrjs-2///, 98/open|filtered/udp//tacnews///, 111/open|filtered/udp//rpcbind///, 122/open|filtered/udp//smakynet///, 123/open|filtered/udp//ntp///, 134/open|filtered/udp//ingres-net///, 209/open|filtered/udp//tam///, 219/open|filtered/udp//uarps///, 428/open|filtered/udp//ocs_cmu///, 455/open|filtered/udp//creativepartnr///, 500/open|filtered/udp//isakmp///, 527/open|filtered/udp//stx///, 641/open|filtered/udp//repcmd///, 709/open|filtered/udp//entrustmanager///, 785/open|filtered/udp//unknown///, 949/open|filtered/udp//unknown///, 958/open|filtered/udp//unknown///	Ignored State: closed (2026)
+# Nmap done at Sun Jul 29 09:57:03 2018 -- 1 IP address (1 host up) scanned in 57.34 seconds

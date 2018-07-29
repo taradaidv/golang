@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun Jul 29 09:56:06 2018 as: nmap -sT -sU -p0-1024 -oA ./result -vv -d -T5 172.16.0.1 -->
+<nmaprun scanner="nmap" args="nmap -sT -sU -p0-1024 -oA ./result -vv -d -T5 172.16.0.1" start="1532872566" startstr="Sun Jul 29 09:56:06 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1025" services="0-1024"/>
+<scaninfo type="udp" protocol="udp" numservices="1025" services="0-1024"/>
+<verbose level="3"/>
+		<debugging level="1"/>
+<taskbegin task="ARP Ping Scan" time="1532872566"/>
+<taskend task="ARP Ping Scan" time="1532872566" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1532872566"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1532872566"/>
+<taskbegin task="UDP Scan" time="1532872566"/>
+<taskend task="UDP Scan" time="1532872622" extrainfo="1025 total ports"/>
+<taskbegin task="Connect Scan" time="1532872622"/>
+<taskend task="Connect Scan" time="1532872623" extrainfo="1025 total ports"/>
+<host starttime="1532872566" endtime="1532872623"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.16.0.1" addrtype="ipv4"/>
+<address addr="CC:2D:E0:17:52:5B" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="2026">
+<extrareasons reason="conn-refused" count="1022"/>
+<extrareasons reason="port-unreaches" count="1004"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="udp" portid="40"><state state="open|filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="udp" portid="53"><state state="open" reason="udp-response" reason_ttl="64"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="udp" portid="57"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="priv-term" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="72"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netrjs-2" method="table" conf="3"/></port>
+<port protocol="udp" portid="98"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="tacnews" method="table" conf="3"/></port>
+<port protocol="udp" portid="111"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="udp" portid="122"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="smakynet" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="udp" portid="134"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ingres-net" method="table" conf="3"/></port>
+<port protocol="udp" portid="209"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="tam" method="table" conf="3"/></port>
+<port protocol="udp" portid="219"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="uarps" method="table" conf="3"/></port>
+<port protocol="udp" portid="428"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ocs_cmu" method="table" conf="3"/></port>
+<port protocol="udp" portid="455"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="creativepartnr" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="527"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="stx" method="table" conf="3"/></port>
+<port protocol="udp" portid="641"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="repcmd" method="table" conf="3"/></port>
+<port protocol="udp" portid="709"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="entrustmanager" method="table" conf="3"/></port>
+<port protocol="udp" portid="785"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="949"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="958"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="9576" rttvar="920" to="50000"/>
+</host>
+<runstats><finished time="1532872623" timestr="Sun Jul 29 09:57:03 2018" elapsed="57.34" summary="Nmap done at Sun Jul 29 09:57:03 2018; 1 IP address (1 host up) scanned in 57.34 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
